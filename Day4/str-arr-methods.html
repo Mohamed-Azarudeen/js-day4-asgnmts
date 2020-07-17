@@ -1,0 +1,158 @@
+<!-- Question-2) Methods of String and Array -->
+<html>
+    <head>
+        <title>Example for Methods of String and Array</title>
+    </head>
+    <body>
+        <h1>Methods of String and Array</h1>
+        <script>
+            var str = "Hello world, to welcome to the universe.";
+            var str1 = "HELLO";
+            var str2 = "    world  ";
+            var res;
+
+            //charAt()
+            console.log("charAt(0): ",str.charAt(0));
+
+            //charCodeAt()
+            console.log("charCodeAt(0): ", str.charCodeAt(0));
+
+            //concat()
+            res = str1.concat(str2);
+            console.log("HELLO.concat('world'): ", res);
+
+            //endsWith()
+            res = str.endsWith("come");
+            console.log("EndsWith('come'): ", res);
+
+            //fromCharCode()
+            res = String.fromCharCode(65);
+            console.log("String.fromCharCode(65): ", res);
+
+            //includes()
+            res = str.includes("the");
+            console.log("includes('the'): ", res);
+
+            //indexOf()
+            res = str.indexOf("to");
+            console.log("indexOf('to'): ", res);
+
+            //lastIndexOf()
+            res = str.lastIndexOf("to");
+            console.log("lastIndexOf('to'): ", res);
+
+            //localeCompare()
+            var s1 = "ab";
+            var s2 = "cd";
+            res = s1.localeCompare(s2);
+            console.log("'ab'.localeCompare('cd')", res);
+            
+            //match()
+            var st = "The rain in SPAIN stays mainly in the plain";
+            res = st.match(/ain/g);
+            console.log("match('ain'): ", res);  // 'g' refer to perform global search
+
+            //repeat()
+            res = str1.repeat(3);
+            console.log("repeat(): ", res);
+
+            //replace()
+            res = str.replace("world","google");
+            console.log("replace(): ", res);
+
+            //search()
+            res = str.search("world");
+            console.log("search(world'): ", res);
+
+            //slice()
+            res = str.slice(0, 10);
+            console.log("slice(): ", res);
+
+            //split()
+            res = str.split(" ")
+            console.log("split(): ", res);
+
+            //startsWith()
+            res = str.startsWith("Hello");
+            console.log("startsWith('Hello'): ", res);
+
+            //substr();
+            res = str.substr(5, 10);
+            console.log("substr(): ", res);
+
+            //toLocaleLowerCase()
+            res = str1.toLocaleLowerCase();
+            console.log("toLocaleLowerCase(): ", res);
+
+            //toLocaleUpperCase()
+            res = str2.toLocaleUpperCase();
+            console.log("toLocaleUpperCase(): ", res);
+
+            //toLowerCase()
+            res = str1.toLowerCase();
+            console.log("toLowerCase(): ", res);
+
+            //toUpperCase()
+            res = str2.toUpperCase();
+            console.log("toUpperCase(): ", res);
+
+            //trim()
+            res = str2.trim();
+            console.log("trim(): ", res);
+
+            //          Methods of Array
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            //tostring()
+            res = fruits.toString();
+            console.log("toString(): ", res);
+
+            //join();
+            res = fruits.join(" * ");
+            console.log("join()", res);
+
+            //pop()
+            res = fruits.pop();
+            console.log("pop(): ", res); // Removes the last element ("Mango") from fruits
+
+            //push()
+            res = fruits.push("Kiwi");  
+            console.log("push(): ", res); //Adds a new element ("Kiwi") to fruits
+
+            //shift()
+            res = fruits.shift(); 
+            console.log("shift(): ", res); //Removes the first element "Banana" from fruits
+
+            //Unshift()
+            res = fruits.unshift("Lemon");
+            console.log("Unshift(): ", res); // Adds a new element "Lemon" to fruits
+
+            //length
+            res = fruits.length;
+            console.log("length: ", res);
+
+            //delete
+            delete fruits[0];
+            console.log("delete: ", fruits);
+
+            //splice()
+            res = fruits.splice(2, 0, "Lemon", "Kiwi");
+            console.log("splice() : ", res);
+
+            res = fruits.splice(0, 1); // Removes the first element of fruits
+            console.log("splice() : ", res);
+            
+            //concat
+            var myGirls = ["Cecilie", "Lone"];
+            var myBoys = ["Emil", "Tobias", "Linus"];
+            res = myGirls.concat(myBoys);
+            console.log("concat(): ", res);
+
+            //slice()
+            res = fruits.slice(1, 3);
+            console.log("slice() : ", res);
+
+
+        </script>
+    </body>
+</html>
